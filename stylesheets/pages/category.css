@@ -1,0 +1,203 @@
+/* 카테고리별 추천 광고상품 */
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+.logo{
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+.logo a img{
+    width: 246px;
+}
+.section-title-wrap{
+    margin-bottom: 24px;
+
+}
+.section-title-wrap p{
+    font-size: 1.6rem;
+}
+.section-title h2{
+    float: left;
+    font-size: 2.4rem;
+}
+.section-title h2:nth-child(2){
+    color: var(--color-blue-600);
+    margin-left: 10px;
+}
+.section-title::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.category-title h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--color-brown-300);
+    margin-bottom: 8px;
+}
+.category-recommend:nth-child(2) .category-title h3{
+    color: var(--color-green-700);
+}
+.category-title a{
+    width: 65px;
+    display: block;
+    font-size: 1.4rem;
+    color: var(--color-gray-700);
+    font-weight: 700;
+    background: url(../../assets/icon/angle-right-default.svg) no-repeat;
+    background-position: 55px 4px;
+}
+.category-keyword h4{
+    font-size: 1.8rem;
+    color: var(--color-black);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.category-keyword-list li{
+    margin-bottom: 12px;
+}
+.category-keyword-list li a{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--color-brown-300);
+    padding: 6px 10px;
+    border: 1px solid var(--color-gray-500);
+}
+.category-keyword-list li a::before{
+    content: '#';
+}
+.category-recommend:nth-child(2) .category-keyword-list li a{
+    color: var(--color-green-700);
+}
+
+.category-recommend{
+    border-top: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: var(--color-brown-300);
+    margin-bottom: 24px;
+    display: flex;
+justify-content: space-between;
+}
+.category-recommend:nth-child(2){
+    border-color: var(--color-green-700);
+}
+.category-recommend article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 32px 24px;
+}
+.item-list-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.item-list{
+    width: 512px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.item-list:nth-child(1){
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: var(--color-gray-300);
+}
+.item-list .item-wrap{
+    width: 160px;
+}
+.item-wrap .item-title{
+    font-size: 1.4rem;
+    margin: 12px 0;
+    word-break: keep-all;
+}
+.promotion-link{
+    position: relative;
+}
+.carouselUI{
+    width: 320px;
+    height: 631px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.caption{
+    width: 260px;
+    height: 90px;
+    position: absolute;
+    bottom: 58px;
+    left: 30px;
+    background-color: var(--color-brown-300);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.category-recommend:nth-child(2) .caption{
+    background-color: var(--color-green-700);
+}
+.caption .promotion-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.promotion-desc{
+    font-weight: 300;
+}
+.indicator{
+    width: 32px;
+}
+.indicator ul{
+    position: absolute;
+    bottom: 22px;
+    left: 144px;
+    display: flex;
+    gap: 8px;
+}
+.indicator ul li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-gray-700);
+    cursor: pointer;
+}
+.indicator ul li:nth-child(2){
+    background-color: var(--color-gray-600);
+
+}
+
+/* .promotion-link{
+    position: relative;
+}
+
+.indicator li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.item-price-wrap{
+    font-size: 1.4rem;
+    line-height: 27px;
+    display: flex;
+    gap: 6px;
+}
+.item-price-wrap .item-price-number{
+    font-size: 1.8rem;
+    font-weight:700;
+}
+.item-info-wrap span.item-type{
+    font-size: 1.4rem;
+    color: var(--color-red-500);
+    margin: 12px 0 4px;
+}
